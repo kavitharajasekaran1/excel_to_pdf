@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="img-wrapper">
+      
+
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="file" id="fileToUpload" accept=".xls,.xlsx">
+    <br/>
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+        <br>
+        <div class="preview"  id ="preview1">
+          <p class="no-pic" id="pic1" >No xlsx file is uploaded</p>
+          <p class="no-pic" id="pic2" ></p>
+
+        
+          <img src="" class="profile-img" style="opacity: 0;">
+        </div>
+
+
+        
+      </div>
+    
+</body>
+</html>
+
+<script>
+   var fileName
+
+$('input[type="file"]'). change(function(e){
+     fileName = e. target. files[0]. name;
+$("#pic1").hide()
+document.getElementById("pic2").innerHTML =fileName;
+
+
+}); 
+        
+
+
+</script>

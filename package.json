@@ -1,0 +1,22 @@
+{
+  "name": "excel_to_pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kavitha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "docxtemplater": "^3.19.3",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jszip": "^2.6.1",
+    "lib-unoconv": "^0.1.2",
+    "multer": "^1.4.2",
+    "read-excel-file": "^4.0.7",
+    "xlsx": "^0.16.7"
+  }
+}

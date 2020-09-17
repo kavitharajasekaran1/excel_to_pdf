@@ -1,0 +1,13 @@
+.profile-img {
+    width: 100px;
+    height: 80px;
+  }
+  
+  .img-upload-btn {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+  
+  .img-wrapper {
+    padding: 20px;
+  }
